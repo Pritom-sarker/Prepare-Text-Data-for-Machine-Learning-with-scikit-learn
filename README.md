@@ -52,3 +52,11 @@ A clever work around is to use a 1 way hash of words to convert them to integers
 The HashingVectorizer class implements this approach which will be wont to consistently hash words, then tokenize and encode documents as required .
 
 The example below demonstrates the HashingVectorizer for encoding one document.
+
+
+# Result
+	                SGDClassifier	  SVM	        Dicision Tree	  MultinomialNB	    LogisticRegression
+TfidfVectorizer	  0.826478209	  0.827000766	    0.718482298	    0.828512025	      0.833990903
+CountVectorizer	  0.784562579	  0.794560403	    0.602944042	    0.817553446	      0.818032192
+HashingVectorizer	0.8225203	    0.826527876	    0.646556705	    0.806002694	      0.821007882
+
